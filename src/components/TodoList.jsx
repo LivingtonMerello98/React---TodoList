@@ -2,7 +2,7 @@ import React from "react";
 
 import ToDoItem from './ToDoItem';
 
-function ToDoList({ }) {
+function ToDoList({ tasks, onRemoveTask }) {
     return (
         <div className="mt-4">
             <ul>

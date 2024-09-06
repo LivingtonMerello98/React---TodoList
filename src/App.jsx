@@ -7,6 +7,9 @@ import React from 'react';
 import Header from './components/Header'
 import Body from './components/Body';
 
+import AddTask from './components/AddTask';
+import ToDoList from './components/ToDoList';
+
 function App() {
   return (
     <div>

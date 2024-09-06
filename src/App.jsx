@@ -3,14 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import React from 'react';
+import Header from './components/Header'
+
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-blue-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        React + Tailwind
-      </h1>
+    <div>
+      <Header />
+      <main>
+
+      </main>
     </div>
-  );
+  )
 }
 
 export default App

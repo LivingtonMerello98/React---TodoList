@@ -13,7 +13,9 @@ html {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    /* justify-items: center; */
     min-height: 100vh;
     /* Assicurati che il main occupi almeno l'altezza della finestra */
 }

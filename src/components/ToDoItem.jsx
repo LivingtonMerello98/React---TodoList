@@ -1,6 +1,7 @@
-import React from "react";
+// src/components/ToDoItem.jsx
+import React from 'react';
 
-function ToDoItem() {
+function ToDoItem({ task, onRemove }) {
     return (
         <li className="flex justify-between items-center p-2 bg-gray-800 text-white rounded mb-2">
             {task}
@@ -11,5 +12,7 @@ function ToDoItem() {
                 Remove
             </button>
         </li>
-    )
+    );
 }
+
+export default ToDoItem;

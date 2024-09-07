@@ -1,5 +1,5 @@
-import React from "react";
-
+// src/components/ToDoList.jsx
+import React from 'react';
 import ToDoItem from './ToDoItem';
 
 function ToDoList({ tasks, onRemoveTask }) {
@@ -11,7 +11,7 @@ function ToDoList({ tasks, onRemoveTask }) {
                 ))}
             </ul>
         </div>
-    )
+    );
 }
 
 export default ToDoList;

@@ -27,6 +27,13 @@ input.input-class::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* Stili per select */
+.select {
+    color: white;
+    background-color: #6B7280;
+    border-color: #4B5563;
+}
+
 .select:focus {
     outline: none;
     border-color: #3B82F6;
@@ -34,28 +41,39 @@ input.input-class::placeholder {
 }
 
 
+.scroll-container {
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+    scrollbar-width: none;
+}
+
 /* index.css */
 
 @media (max-width: 640px) {
     .input-class {
         font-size: 14px;
-        /* Riduci la dimensione del font su schermi piccoli */
+
     }
 
     .select {
         font-size: 14px;
-        /* Riduci la dimensione del font su schermi piccoli */
+
     }
 }
 
 @media (min-width: 768px) {
     .input-class {
         font-size: 16px;
-        /* Aumenta la dimensione del font su schermi medio-grandi */
     }
 
     .select {
         font-size: 16px;
-        /* Aumenta la dimensione del font su schermi medio-grandi */
     }
 }

@@ -1,6 +1,5 @@
-// src/App.jsx
 import React from 'react';
-import { TaskProvider } from './store'; // Importiamo il provider
+import { TaskProvider } from './store';
 import AddTask from './components/AddTask';
 import ToDoList from './components/ToDoList';
 

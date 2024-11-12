@@ -3,19 +3,9 @@
 @tailwind utilities;
 
 /* index.css */
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: rgb(28, 28, 28);
-}
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* justify-items: center; */
-    min-height: 100vh;
-    /* Assicurati che il main occupi almeno l'altezza della finestra */
+    height: 100vh;
 }

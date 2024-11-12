@@ -5,15 +5,20 @@ function AddTask({ onAddTask }) {
     const [task, setTask] = useState('');
 
     const handleSubmit = (e) => {
+
         e.preventDefault();
+        //il metodo trim() rimuove gli spazi
         if (task.trim()) {
+            console.log(`segnaposto ${task.trim()}`)
             onAddTask(task);
+
             setTask('');
+
         }
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex items-center space-x-2 mt-4">
+        <form onSubmit={handleSubmit} className="flex items-center space-x-2 mt-4 w-6/12 bg-blue-300">
             <input
                 type="text"
                 value={task}

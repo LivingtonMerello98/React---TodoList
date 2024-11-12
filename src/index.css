@@ -32,3 +32,30 @@ input.input-class::placeholder {
     border-color: #3B82F6;
     background-color: #4B5563;
 }
+
+
+/* index.css */
+
+@media (max-width: 640px) {
+    .input-class {
+        font-size: 14px;
+        /* Riduci la dimensione del font su schermi piccoli */
+    }
+
+    .select {
+        font-size: 14px;
+        /* Riduci la dimensione del font su schermi piccoli */
+    }
+}
+
+@media (min-width: 768px) {
+    .input-class {
+        font-size: 16px;
+        /* Aumenta la dimensione del font su schermi medio-grandi */
+    }
+
+    .select {
+        font-size: 16px;
+        /* Aumenta la dimensione del font su schermi medio-grandi */
+    }
+}

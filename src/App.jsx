@@ -1,7 +1,7 @@
 import React from 'react';
 import { TaskProvider } from './store';
 import AddTask from './components/AddTask';
-import ToDoList from './components/ToDoList';
+import List from './components/List';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <div className="flex justify-center items-center bg-gradient-to-b from-gray-700 to-gray-900">
         <main className="p-4 mx-4 container w-full md:w-6/12">
           <AddTask />
-          <ToDoList />
+          <List />
         </main>
       </div>
     </TaskProvider>

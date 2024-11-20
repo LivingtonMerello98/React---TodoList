@@ -2,7 +2,7 @@ import React from 'react';
 import ToDoItem from './ToDoItem';
 import { useTaskContext } from '../store';
 
-function ToDoList() {
+function List() {
     const { tasks, removeTask } = useTaskContext();
 
     return (
@@ -15,5 +15,4 @@ function ToDoList() {
         </div>
     );
 }
-
-export default ToDoList;
+export default List;

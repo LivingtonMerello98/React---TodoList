@@ -14,7 +14,8 @@ main {
 input.input-class {
     color: white;
     background-color: #6b728000;
-    border-color: #4B5563;
+    border-color: #ffffff4d;
+    /* border-color: #4B5563; */
 }
 
 input.input-class:focus {
@@ -24,14 +25,14 @@ input.input-class:focus {
 }
 
 input.input-class::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.71);
 }
 
 /* Stili per select */
 .select {
     color: white;
     background-color: #6b728000;
-    border-color: #4B5563;
+    border-color: #ffffff4d;
 }
 
 .select:focus {
@@ -95,6 +96,23 @@ input.input-class::placeholder {
 }
 
 
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px; 
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover per un tocco interattivo */
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.2); /* Intensifica il bianco sul hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Ombra più intensa */
+  }
+  
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -104,6 +122,31 @@ input.input-class::placeholder {
         transform: rotate(360deg);
     }
 }
+
+
+
+
+/* Definizione dell'animazione per il movimento del colore */
+@keyframes liquidBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Classe per lo sfondo animato */
+  .liquid-bg {
+    min-height: 100vh; /* Copre l'intera altezza dello schermo */
+    background: linear-gradient(270deg, #322F81, #2E4A7D, #042F2E);
+    background-size: 400% 400%; /* Estende il gradiente per il movimento */
+    animation: liquidBackground 10s ease infinite; /* Durata, tipo e ciclo infinito */
+  }
+  
 
 /* index.css */
 

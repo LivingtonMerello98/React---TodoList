@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { TaskProvider } from './store';
 import AddTask from './components/AddTask';
 import List from './components/List';
-import SplashPage from './components/SplashPage'; // Import del componente SplashPage
+import SplashPage from './components/SplashPage';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   // Nascondi la splash page dopo 3 secondi
   useEffect(() => {
-
     const timer = setTimeout(() => {
       setShowSplash(false);
     }, 2000);
@@ -22,7 +21,7 @@ function App() {
       {showSplash ? (
         <SplashPage />
       ) : (
-        <div className="flex justify-center items-center bg-gradient-to-b from-blue-950 to-black min-h-screen">
+        <div className="flex justify-center items-center liquid-bg">
           <main className="p-4 mx-4 container w-full md:w-6/12">
             <AddTask />
             <List />

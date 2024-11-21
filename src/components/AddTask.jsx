@@ -49,7 +49,7 @@ function AddTask() {
                 </select>
             </div>
 
-            <button type="submit" className="w-full md:w-auto bg-blue-900 hover:bg-blue-700 text-white px-4 py-2 rounded text-xs mt-4 sm:mt-0 font-bold">
+            <button type="submit" className="w-full md:w-auto bg-white text-blue-900 px-4 py-2 rounded text-xs mt-4 sm:mt-0 font-bold">
                 <FontAwesomeIcon icon="plus" />
             </button>
         </form>

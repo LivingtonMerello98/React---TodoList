@@ -29,7 +29,7 @@ function ToDoItem({ task, onRemove }) {
     };
 
     return (
-        <li className={`flex justify-between items-center p-2 text-white rounded mb-2 bg-indigo-950 bg-gradient-to-r from-indigo-900 to-teal-900`}>
+        <li className={`glass-card flex justify-between items-center p-2 text-white rounded mb-2`}>
             <div className='flex w-full'>
                 <div className='item-field'>
                     <p className="text-sm text-white text-bold">{task.task}</p>
@@ -49,11 +49,10 @@ function ToDoItem({ task, onRemove }) {
                     >
                         <FontAwesomeIcon icon="trash" />
                     </button>
-
-
                 </div>
             </div>
         </li>
+
     );
 }
 

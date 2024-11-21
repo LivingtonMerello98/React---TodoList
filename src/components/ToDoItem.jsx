@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function ToDoItem({ task, onRemove }) {
 
     const getCategoryColor = (category) => {
@@ -42,12 +42,15 @@ function ToDoItem({ task, onRemove }) {
                     <span className={`text-xs ml-2 ${getTimeColor(task.time)} text-white rounded px-2 py-1 w-label`}>
                         {task.time}
                     </span>
+
                     <button
                         onClick={onRemove}
-                        className="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded fit-content mx-2"
+                        className='bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded w-fit mx-2 text-sm flex items-center'
                     >
-                        -
+                        <FontAwesomeIcon icon="trash" />
                     </button>
+
+
                 </div>
             </div>
         </li>

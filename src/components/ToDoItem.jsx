@@ -5,28 +5,29 @@ function ToDoItem({ task, onRemove }) {
     const getCategoryColor = (category) => {
         switch (category) {
             case 'work':
-                return 'bg-sky-600';  // Cambiato in blu
+                return 'bg-sky-500 text-white';
             case 'fun':
-                return 'bg-teal-600'; // Cambiato in teal
-            case 'gym':
-                return 'bg-teal-500'; // Cambiato in teal
+                return 'bg-pink-500 text-white';
+            case 'personal':
+                return 'bg-emerald-400 text-white';
             default:
-                return 'bg-gray-600';
+                return 'bg-gray-300 text-gray-700';
         }
     };
 
     const getTimeColor = (time) => {
         switch (time) {
             case 'morning':
-                return 'bg-yellow-600';
+                return 'bg-yellow-400 text-gray-800';
             case 'afternoon':
-                return 'bg-orange-600';
+                return 'bg-orange-500 text-white';
             case 'evening':
-                return 'bg-purple-600';
+                return 'bg-indigo-800 text-white';
             default:
-                return 'bg-gray-600';
+                return 'bg-gray-300 text-gray-700';
         }
     };
+
 
     return (
         <li className={`glass-card flex justify-between items-center p-2 text-white rounded mb-2`}>

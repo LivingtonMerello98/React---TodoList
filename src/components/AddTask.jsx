@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function AddTask() {
     const [task, setTask] = useState('');
-    const [category, setCategory] = useState('work');
+    const [category, setCategory] = useState('personal');
     const [time, setTime] = useState('morning');
     const { addTask } = useTaskContext();
 

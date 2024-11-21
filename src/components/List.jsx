@@ -6,13 +6,14 @@ function List() {
     const { tasks, removeTask } = useTaskContext();
 
     return (
-        <div className="mt-4 scroll-container">
+        <div className="mt-4 scroll-container rounded-md ">
             <ul>
                 {tasks.map((task, index) => (
                     <ToDoItem key={index} task={task} onRemove={() => removeTask(index)} />
                 ))}
             </ul>
         </div>
+
     );
 }
 export default List;

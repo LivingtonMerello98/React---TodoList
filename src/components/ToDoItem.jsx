@@ -5,11 +5,11 @@ function ToDoItem({ task, onRemove }) {
     const getCategoryColor = (category) => {
         switch (category) {
             case 'work':
-                return 'bg-indigo-700';
+                return 'bg-sky-600';  // Cambiato in blu
             case 'fun':
-                return 'bg-gray-500';
+                return 'bg-teal-600'; // Cambiato in teal
             case 'gym':
-                return 'bg-teal-600';
+                return 'bg-teal-500'; // Cambiato in teal
             default:
                 return 'bg-gray-600';
         }
@@ -29,22 +29,27 @@ function ToDoItem({ task, onRemove }) {
     };
 
     return (
-        <li className={`flex justify-between items-center p-2 text-white rounded mb-2 bg-gray-700`}>
-            <div>
-                <span className="text-sm">{task.task}</span>
-                <span className={`text-xs ml-2 ${getCategoryColor(task.category)} text-white rounded px-2 py-1`}>
-                    {task.category}
-                </span>
-                <span className={`text-xs ml-2 ${getTimeColor(task.time)} text-white rounded px-2 py-1`}>
-                    {task.time}
-                </span>
+        <li className={`flex justify-between items-center p-2 text-white rounded mb-2 bg-indigo-950 bg-gradient-to-r from-indigo-900 to-teal-900`}>
+            <div className='flex w-full'>
+                <div className='item-field'>
+                    <p className="text-sm text-white text-bold">{task.task}</p>
+                </div>
+
+                <div className='flex items-center button-field '>
+                    <span className={`text-xs ml-2 ${getCategoryColor(task.category)} text-white rounded px-2 py-1 w-label text-center`}>
+                        {task.category}
+                    </span>
+                    <span className={`text-xs ml-2 ${getTimeColor(task.time)} text-white rounded px-2 py-1 w-label`}>
+                        {task.time}
+                    </span>
+                    <button
+                        onClick={onRemove}
+                        className="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded fit-content mx-2"
+                    >
+                        -
+                    </button>
+                </div>
             </div>
-            <button
-                onClick={onRemove}
-                className="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded"
-            >
-                -
-            </button>
         </li>
     );
 }

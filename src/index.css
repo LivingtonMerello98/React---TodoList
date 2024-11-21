@@ -13,14 +13,14 @@ main {
 
 input.input-class {
     color: white;
-    background-color: #6B7280;
+    background-color: #6b728000;
     border-color: #4B5563;
 }
 
 input.input-class:focus {
     outline: none;
     border-color: #3B82F6;
-    background-color: #4B5563;
+    background-color: #4b556300;
 }
 
 input.input-class::placeholder {
@@ -30,14 +30,14 @@ input.input-class::placeholder {
 /* Stili per select */
 .select {
     color: white;
-    background-color: #6B7280;
+    background-color: #6b728000;
     border-color: #4B5563;
 }
 
 .select:focus {
     outline: none;
     border-color: #3B82F6;
-    background-color: #4B5563;
+    background-color: #131E44;
 }
 
 
@@ -52,6 +52,23 @@ input.input-class::placeholder {
 
 .scroll-container {
     scrollbar-width: none;
+}
+
+.item-field {
+    width: 100%;
+}
+
+.button-field {
+    width: 100%;
+}
+
+.w-label {
+    width: 60px;
+    height: fit-content;
+}
+
+.fit-content {
+    height: fit-content;
 }
 
 /* index.css */

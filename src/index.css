@@ -63,7 +63,7 @@ input.input-class::placeholder {
 }
 
 .w-label {
-    width: 60px;
+    width: fit-content;
     height: fit-content;
 }
 
@@ -93,6 +93,7 @@ input.input-class::placeholder {
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
+
 
 @keyframes spin {
     0% {

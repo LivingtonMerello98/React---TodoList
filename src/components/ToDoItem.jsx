@@ -39,7 +39,7 @@ function ToDoItem({ task, onRemove }) {
                     <span className={`text-xs ml-2 ${getCategoryColor(task.category)} text-white rounded px-2 py-1 w-label text-center`}>
                         {task.category}
                     </span>
-                    <span className={`text-xs ml-2 ${getTimeColor(task.time)} text-white rounded px-2 py-1 w-label`}>
+                    <span className={`text-xs ml-2 ${getTimeColor(task.time)} text-white rounded px-2 py-1 w-label text-center`}>
                         {task.time}
                     </span>
 

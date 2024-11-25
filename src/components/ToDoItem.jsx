@@ -30,12 +30,11 @@ function ToDoItem({ task, onRemove }) {
 
 
     return (
-        <li className={`glass-card flex justify-between items-center p-2 text-white rounded mb-2`}>
+        <li className={`glass-card flex justify-between items-center p-2 text-white rounded mb-2 w-full`}>
             <div className='flex w-full'>
                 <div className='item-field'>
                     <p className="text-sm text-white text-bold">{task.task}</p>
                 </div>
-
                 <div className='flex items-center button-field '>
                     <span className={`text-xs ml-2 ${getCategoryColor(task.category)} text-white rounded px-2 py-1 w-label text-center`}>
                         {task.category}

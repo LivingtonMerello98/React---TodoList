@@ -13,8 +13,8 @@ function AddTask() {
         if (task.trim()) {
             // Aggiungiamo il task con la categoria e l'orario
             addTask({ task: task.trim(), category, time });
-            setTask('');
-            setTime('morning');
+            setTask(''); // Reset del campo input
+            setTime('morning'); // Reset del tempo
         }
     };
 
